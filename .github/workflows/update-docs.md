@@ -1,15 +1,18 @@
 ---
 on:
-  push:
-    branches: [develop]
-  workflow_dispatch:
+  issues:
+    types: [opened, reopened]
   stop-after: +30d # workflow will no longer trigger after 30 days. Remove this and recompile to run indefinitely
+  reaction: eyes
 
 permissions: read-all
 
 network: defaults
 
 safe-outputs:
+  add-labels:
+    max: 5
+  add-comment:
   create-pull-request:
     draft: true
 
