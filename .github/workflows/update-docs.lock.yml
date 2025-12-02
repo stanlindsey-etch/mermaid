@@ -5,7 +5,7 @@
 #
 # Source: githubnext/agentics/workflows/update-docs.md@6ce95b97c78da4bc15bed1a26e9d7f60e8979991
 #
-# Effective stop-time: 2025-12-11 23:07:42
+# Effective stop-time: 2026-01-01 17:42:06
 #
 # Job Dependency Graph:
 # ```mermaid
@@ -5766,7 +5766,7 @@ jobs:
         id: check_stop_time
         uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd
         env:
-          GH_AW_STOP_TIME: 2025-12-11 23:07:42
+          GH_AW_STOP_TIME: 2026-01-01 17:42:06
           GH_AW_WORKFLOW_NAME: "Update Docs"
         with:
           script: |
